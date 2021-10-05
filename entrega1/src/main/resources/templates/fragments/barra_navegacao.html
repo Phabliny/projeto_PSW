@@ -1,7 +1,20 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 
-    <div th:fragment="navbar" class="navbar navbar-expand-md navbar-light bg-light">
-        <h1>Adote um pet</h1>
+    <div th:fragment="navbar" class="d-flex justify-content-between navbar navbar-expand-md navbar-light bg-info text-white">
+        <div class="pl-5">
+            <h3>Adote um Pet</h3>
+        </div>
+
+        <div> 
+            <ul class="navbar-nav mr-auto pr-5">
+                <li class="nav-item pr-3  pl-3 pt-2 pb-2 bg-white"><a href="#" class="text-dark">Home</a></li>
+                <li class="nav-item pr-3  pl-3 pt-2 pb-2 bg-white"><a href="#" class="text-dark">Sobre</a></li>
+                <li class="nav-item pr-3  pl-3 pt-2 pb-2 bg-white"><a href="#" class="text-dark">Adote</a></li>
+                <li class="nav-item pr-3  pl-3 pt-2 pb-2 bg-white"><a href="#" class="text-dark">Contato</a></li>
+                <li class="nav-item pr-3  pl-3 pt-2 pb-2 mr-4 bg-white"><a href="#" class="text-dark">Parceiros</a></li>
+            </ul>
+        </div>
     </div>
+    
 
 </html>
