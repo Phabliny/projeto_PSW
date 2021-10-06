@@ -25,8 +25,8 @@ public class Controlador {
         return "contato";
     }
 
-    @RequestMapping("/parceiros.html")
-    String parceiros(){
-        return "parceiros";
+    @RequestMapping("/apoio.html")
+    String apoio(){
+        return "apoio";
     }
 }
