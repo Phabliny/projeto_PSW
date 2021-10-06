@@ -19,4 +19,14 @@ public class Controlador {
     String adote(){
         return "adote";
     }
+
+    @RequestMapping("/contato.html")
+    String contato(){
+        return "contato";
+    }
+
+    @RequestMapping("/apoio.html")
+    String apoio(){
+        return "apoio";
+    }
 }
