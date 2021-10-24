@@ -1,16 +1,33 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
-    <div th:fragment="footer" class="d-flex justify-content-around align-items-center  bg-info text-white">
-        <div class="pl-5"> 
-            <img src="img/logo.png" width="90px">
-        </div>
-        <div>
-            <p class="pt-5">Desenvolvido por Bruno, Hellen e Phabliny</p>
-        </div>
-
-        <div class="d-flex justify-content-between pr-5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" width="50px" height="50px">
-            <img class="mr-3 ml-3" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" width="50px" height="50px">
-            <img class="mr-5" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="50px" height="50px">
+    <div th:fragment="footer" class="container bg-info text-white">
+        <div class="row justify-content-center">
+            <table class="w-75">
+                <tr>
+                    <td id="contato" class="w-20 text-center py-2 font-weight-bold">Contato</td>
+                    <td class="w-50 text-center py-2 font-weight-bold">Nossas redes</td>
+                    <td class="w-30 text-center my-2 font-weight-bold">Acompanhe:</td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <ul class="navbar-nav">
+                            <li><a href="">adoteumpet@gmail.com</a></li>
+                            <li><a href="">(34) 99999-9999</a></li>
+                        </ul>
+                    </td>
+                    <td class="text-center">
+                        <a class="mx-2 my-2" href=""><img src="img/insta_gray.png" alt="" width="40px"></a>
+                        <a class="mx-2 my-2" href=""><img src="img/face_gray.png" alt="" width="40px"></a>
+                        <a class="mx-2 my-2" href=""><img src="img/twitter_gray.png" alt="" width="40px"></a>
+                        <a class="mx-2 my-2" href=""><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Whatsapp-PNG-Email-free-download.png" alt="" width="45px"></a>
+                    </td>
+                    <td>
+                        <form action="">
+                            <label for="name">Email:
+                            <input type="text" name="nome" id="name" placeholder="Digite seu email"></label>
+                        </form>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </html>
