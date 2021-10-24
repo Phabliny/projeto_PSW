@@ -29,4 +29,24 @@ public class Controlador {
     String apoio(){
         return "apoio";
     }
+
+    @RequestMapping("/cadAdocao.html")
+    String pagAdocao(){
+        return "cadAdocao";
+    }
+
+    @RequestMapping("/login.html")
+    String login(){
+        return "login";
+    }
+
+    @RequestMapping("/cadAnimais.html")
+    String cadAnimais(){
+        return "cadAnimais";
+    }
+
+    @RequestMapping("/cadVoluntario.html")
+    String cadVoluntario(){
+        return "cadVoluntario";
+    }
 }
