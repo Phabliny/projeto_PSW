@@ -17,11 +17,8 @@ public class Entrega1Application implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception{
-		jdbcTemplate.execute("CREATE TABLE voluntario (id SERIAL, nome VARCHAR(255), email VARCHAR(255), cpf NUMBER, endereco VARCHAR(255), telefone NUMBER, sexo VARCHAR(1), senha VARCHAR(255))");
-
-		jdbcTemplate.execute("CREATE TABLE usuario (id SERIAL, nome VARCHAR(255), email VARCHAR(255), cpf NUMBER, endereco VARCHAR(255), telefone NUMBER, sexo VARCHAR(1), senha VARCHAR(255))");
+		jdbcTemplate.execute("CREATE TABLE usuario (id SERIAL, voluntario boolean, nome VARCHAR(255), email VARCHAR(255), cpf NUMBER, endereco VARCHAR(255), telefone NUMBER, sexo VARCHAR(1), senha VARCHAR(255))");
 
 		jdbcTemplate.execute("CREATE TABLE animais (id SERIAL, nome VARCHAR(255), raca VARCHAR(255), porte VARCHAR(1), descricao VARCHAR(255))");
 	}
-
 }
