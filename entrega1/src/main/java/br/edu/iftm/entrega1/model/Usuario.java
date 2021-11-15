@@ -7,7 +7,7 @@ public class Usuario {
     private boolean voluntario;
     private int cpf, telefone;
     
-    public Usuario(Integer id, String nome, boolean voluntario, String email, int cpf, String endereco, int telefone, char sexo, String senha) {
+    public Usuario(String nome, boolean voluntario, String email, int cpf, char sexo, String endereco, int telefone, String senha) {
         this.nome = nome;
         this.voluntario = voluntario;
         this.email = email;
@@ -16,6 +16,10 @@ public class Usuario {
         this.telefone = telefone;
         this.sexo = sexo;
         this.senha = senha;
+    }
+
+    public Usuario(int numeroDaLinha, String string, boolean b, String consulta, int int1, int i, String consulta2,
+            int numeroDaLinha2, int j, String consulta3) {
     }
 
     public String getNome() {
@@ -85,10 +89,3 @@ public class Usuario {
     }
 
 }
-
-
-
-
-
-    
-
