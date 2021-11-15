@@ -1,51 +1,51 @@
-package br.edu.iftm.entrega1;
+package br.edu.iftm.entrega1.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class Controlador {
-    @RequestMapping("/home.html")
+    @RequestMapping("/home")
     String inicio(){
         return "home";
     }
 
-    @RequestMapping("/sobre.html")
+    @RequestMapping("/sobre")
     String sobre(){
         return "sobre";
     }
 
-    @RequestMapping("/adote.html")
+    @RequestMapping("/adote")
     String adote(){
         return "adote";
     }
 
-    @RequestMapping("/contato.html")
+    @RequestMapping("/contato")
     String contato(){
         return "contato";
     }
 
-    @RequestMapping("/apoio.html")
+    @RequestMapping("/apoio")
     String apoio(){
         return "apoio";
     }
 
-    @RequestMapping("/cadAdocao.html")
+    @RequestMapping("/cadAdocao")
     String pagAdocao(){
         return "cadAdocao";
     }
 
-    @RequestMapping("/login.html")
+    @RequestMapping("/login")
     String login(){
         return "login";
     }
 
-    @RequestMapping("/cadAnimais.html")
+    @RequestMapping("/cadAnimais")
     String cadAnimais(){
         return "cadAnimais";
     }
 
-    @RequestMapping("/cadVoluntario.html")
+    @RequestMapping("/cadVoluntario")
     String cadVoluntario(){
         return "cadVoluntario";
     }
